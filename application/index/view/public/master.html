@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="zh-cn">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1,user-scalable=no">
+    <meta http-equiv="x-ua-compatible" content="IE=edge">
+    <title>首页</title>
+    <link href="__ROOT__/index/css/index.css" rel="stylesheet" type="text/css">
+    <link rel="stylesheet" href="__ROOT__/index/css/swiper-4.1.6.min.css"/>
+    <script src="__ROOT__/index/js/jquery-1.11.3.js"></script>
+</head>
+<body>
+<!--1.头部信息-->
+<header>
+    <div class="containerself clearfix">
+        <div class="pull-left">
+            <img src="__ROOT__/index/img/logo.png" class="img-responsive" alt=""/>
+        </div>
+        <div class="pull-right">
+            <p class="login">
+                <span>
+                    <!--<a href="#">登录</a> | <a href="#">申请</a>-->
+                </span>
+                <span>
+                    <a href="#">中文</a> / <a href="#">English</a>
+                </span>
+            </p>
+            <div class="aixin">
+                <div class="aixintel">
+                    <p>+86 13917372225</p>
+                    <p>爱心热线</p>
+                </div>
+                <a href="{:url('index/juan/index')}">
+                    <img src="__ROOT__/index/img/juanzeng.png"  alt=""/>
+                </a>
+            </div>
+        </div>
+    </div>
+</header>
+<!--2.导航栏-->
+<nav>
+    <div class="containerself">
+        <ul class="nav">
+            <li>
+                <a href="{:url('index/index/index')}" class="active">首页</a>
+            </li>
+            <li>
+                <a href="{:url('index/abouts/index')}">关于厚天</a>
+            </li>
+            <li>
+                <a href="{:url('index/news/index')}">新闻动态</a>
+            </li>
+            <li>
+                <a href="{:url('index/news/fang')}">防灾减灾</a>
+            </li>
+            <li>
+                <a href="{:url('index/news/actions')}">救援行动</a>
+            </li>
+            <li>
+                <a href="{:url('index/union/index')}">救援联盟</a>
+            </li>
+            <li>
+                <a href="{:url('index/juan/index')}">公益慈善</a>
+            </li>
+            <li>
+                <a href="{:url('index/contract/index')}">联系我们</a>
+            </li>
+        </ul>
+    </div>
+</nav>
+<!--3.轮播图-->
+<div id="lunbo" class="carousel slide" data-ride="carousel">
+    <!-- Wrapper for slides -->
+    <div class="carousel-inner" role="listbox">
+        {volist name="$bannerData" id="vo"}
+            {if condition="$i==1"}
+                <div class="item active">
+                    <img src="__ROOT__/uploads/{$vo.pic}" alt="...">
+                </div>
+            {else /}
+                <div class="item">
+                    <img src="__ROOT__/uploads/{$vo.pic}" alt="...">
+                </div>
+            {/if}
+        {/volist}
+    </div>
+
+    <!-- Controls -->
+    <a class="left carousel-control" href="#lunbo" role="button" data-slide="prev">
+        <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+        <span class="sr-only">Previous</span>
+    </a>
+    <a class="right carousel-control" href="#lunbo" role="button" data-slide="next">
+        <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+        <span class="sr-only">Next</span>
+    </a>
+</div>
+
+
+{block name="content"}{/block}
+<!--8.底部-->
+<footer>
+    <div class="containerself container-fluid">
+        <div class="row">
+            <div class="col col-md-2">
+                <ul>
+                    <li>
+                        <h4><a href="#">网站</a></h4>
+                    </li>
+                    <li><a href="#">无故障</a></li>
+                    <li><a href="#">网络地图</a></li>
+                </ul>
+            </div>
+            <div class="col col-md-2">
+                <ul>
+                    <li>
+                        <h4><a href="#">保持联系</a></h4>
+                    </li>
+                    <li><a href="#">联系我们</a></li>
+                    <li><a href="#">地图和方向</a></li>
+                    <li><a href="#">工作</a></li>
+                    <li><a href="#">社交媒体</a></li>
+                </ul>
+            </div>
+            <div class="col col-md-2">
+                <ul>
+                    <li>
+                        <h4><a href="#">安全与品牌</a></h4>
+                    </li>
+                    <li><a href="#">隐私声明</a></li>
+                    <li><a href="#">举报侵犯版权</a></li>
+                    <li><a href="#">报告安全问题</a></li>
+                    <li><a href="#">商标声明</a></li>
+                </ul>
+            </div>
+            <div class="col col-md-3">
+                <div class="imgdibu">
+                    <img src="__ROOT__/index/img/icon_f1.png" alt=""/>
+                    <img src="__ROOT__/index/img/icon_f2.png" alt=""/>
+                    <img src="__ROOT__/index/img/icon_f3.png" alt=""/>
+                    <img src="__ROOT__/index/img/icon_f4.png" alt=""/>
+                    <img src="__ROOT__/index/img/icon_f5.png" alt=""/>
+                    <img src="__ROOT__/index/img/icon_f6.png" alt=""/>
+                    <img src="__ROOT__/index/img/icon_f7.png" alt=""/>
+                    <img src="__ROOT__/index/img/icon_f8.png" alt=""/>
+                </div>
+            </div>
+            <div class="col col-md-2 col-md-offset-1">
+                <div class="imgdibu">
+                    <img src="__ROOT__/index/img/fot_logo.png" class="fotlogo" alt=""/>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+
+            <div class="col col-xs-12">
+                <hr/>
+                <a href="#">技术支持：晗特互联</a>
+            </div>
+        </div>
+    </div>
+</footer>
+
+
+
+<script src="__ROOT__/index/js/html5shiv.min.js"></script>
+<script src="__ROOT__/index/js/respond.min.js"></script>
+<script src="__ROOT__/index/js/bootstrap.min.js"></script>
+<script src="__ROOT__/index/js/bootlint.js"></script>
+<script src="__ROOT__/index/js/swiper-4.1.6.min.js"></script>
+
+<script>
+  $("li").on('click',function(){
+    $(this).addClass('active').siblings('.active').removeClass("active");
+    var name=$(this).children("p").attr("data-mingzi");
+    console.log(name);
+//        找到具有相同名字的div让他显示或者隐藏；
+    var mydiv=$("div[class~='"+name+"']");
+    console.log($(mydiv));
+    console.log($(mydiv).siblings(".active"));
+    if(!$(mydiv).hasClass('active')){
+      $(mydiv).addClass('active').siblings('.active').removeClass("active");
+    }
+  })
+</script>
+<script>
+
+  var swiper1 = new Swiper('#swiper1', {
+    slidesPerView: 4,
+    spaceBetween: 80,
+//        autoplay:true,
+    loop:true,
+    // 自动播放时间
+    autoplay:true,
+    // 播放的速度
+    speed:2000
+//        pagination: {
+//            el: '.swiper-pagination',
+//            clickable: true
+//        }
+  });
+
+  var swiper2 = new Swiper('#swiper2', {
+    slidesPerView: 4,
+    spaceBetween: 30,
+    autoplay:true,
+    loop:true,
+    speed:3000
+  });
+  //    if(swiper2.slides.length<=3){
+  //        mySwiper.destroy();
+  //    }
+
+</script>
+
+</body>
+</html>

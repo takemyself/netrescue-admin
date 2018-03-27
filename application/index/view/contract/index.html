@@ -1,0 +1,91 @@
+{extend name='public/master'}
+{block name='content'}
+<link rel="stylesheet" href="__ROOT__/index/css/lianxi.css">
+<div id="lianxi">
+    <h3>HELLO ! 您好</h3>
+    <div class="containerself clearfix">
+        <div class="lianxilf lxbox">
+            <p><img src="__ROOT__/index/img/icon_ct1.png" alt=""/>电话 ：</p>
+            <p>
+                {$conData.phone}
+            </p>
+            <p>
+                <img src="__ROOT__/index/img/icon_ct2.png" alt=""/>邮箱 ：
+            </p>
+            <p>
+                <span>{$conData.email}</span>
+            </p>
+            <p>
+                <img src="__ROOT__/index/img/icon_ct3.png" alt=""/>微信 ：
+            </p>
+            <p>
+                <span>{$conData.qq}</span>
+            </p>
+            <p>
+                <img src="__ROOT__/index/img/icon_ct4.png" alt=""/>地址 ：
+            </p>
+            <p>
+                <span>{$conData.address}</span>
+            </p>
+
+        </div>
+        <div class="lianxicenter lxbox">
+            <form method="post" onsubmit="return liumess(this)" class="formdata">
+                <div class="form-group col-md-5">
+                    <label for="username">您的称呼</label>
+                    <input  class="form-control" id="username" name="name" required>
+                </div>
+                <div class="form-group col-md-5 col-md-offset-2">
+                    <label for="usertel">您的电话</label>
+                    <input type="tel" class="form-control" id="usertel" name="phone" required>
+                </div>
+                <div class="form-group ">
+                    <label for="usertel">您的留言</label>
+                    <textarea class="form-control" rows="5" name="messages" required></textarea>
+                </div>
+                <div style="text-align: center">
+                    <button type="submit" class="btn btn-danger">提交留言</button>
+                </div>
+            </form>
+            <script>
+                function liumess(obj) {
+                  var data=$('.formdata').serialize();
+                  console.log(data);
+                  $.post('ajaxMessage',data,function (res) {
+                    if (res==1){
+                      $('.formdata')[0].reset();
+                      alert('success');
+                    }else {
+                      alert(res.msg);
+                    }
+                  },'json');
+                  return false;
+                }
+            </script>
+        </div>
+        <div class="lianxirg lxbox pull-right">
+            <img src="__ROOT__/uploads/{$conData.pic}" width="168" height="168" alt=""/>
+            <p>扫一扫加关注</p>
+        </div>
+    </div>
+</div>
+
+
+
+<!--5.地图-->
+<div id="baiduMap" class="containerself"></div>
+<script type="text/javascript" src="http://api.map.baidu.com/api?v=2.0&ak=V6RjjChFXrifV2z41z0sYQEO"></script>
+<script src="__ROOT__/index/js/bootlint.js"></script>
+
+<!--实例化地图-->
+<script type="text/javascript">
+  var map = new BMap.Map("baiduMap");  //创建Map实例
+  var point = new BMap.Point(114.419915,30.513719);  //创建Point位置实例
+  map.centerAndZoom(point, 15);  //设置地图中心点及缩放级别
+  map.addControl(new BMap.MapTypeControl());  //添加地图类型控件
+  var marker = new BMap.Marker(point);  //创建一个Marker点
+  map.addOverlay(marker);  //将Marker点覆盖到地图上
+  marker.setAnimation(BMAP_ANIMATION_BOUNCE);  //使Marker点跳动起来
+  map.enableScrollWheelZoom(true);     //开启鼠标滚轮缩放
+</script>
+{/block}

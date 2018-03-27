@@ -1,0 +1,53 @@
+#about {
+  padding-bottom: 1em;
+}
+#about > .pull-left {
+  width: 68%;
+}
+#about > .pull-left .abtitle {
+  height: 26px;
+  border-bottom: 1px solid #ddd;
+}
+#about > .pull-left .abtitle > h4 {
+  margin: 0;
+}
+#about > .pull-left .abtitle a {
+  text-decoration: none;
+  color: #666;
+}
+#about > .pull-left .abcontent .content-top {
+  text-align: center;
+}
+#about > .pull-left .abcontent .content-top .time {
+  padding-bottom: 1em;
+}
+#about > .pull-left .abcontent .content-top .time span {
+  padding: 0 1em;
+}
+#about > .pull-left .abcontent .content-center > div {
+  margin: 1em 0;
+  text-indent: 2em;
+  line-height: 1.8em;
+}
+#about > .pull-right {
+  max-width: 28%;
+  background-color: #f5f5f9;
+  padding: 1em 1.7em;
+}
+#about > .pull-right .box > h4 {
+  padding-bottom: 5px;
+  padding-left: 5px;
+  border-left: 3px solid #e60012;
+  border-bottom: 1px solid #ddd;
+}
+#about > .pull-right .box ul li {
+  padding: 0.5em 0;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  list-style-position: inside;
+}
+#about > .pull-right .box ul a {
+  text-decoration: none;
+  color: #666;
+}

@@ -1,0 +1,53 @@
+#lianmeng {
+  padding-bottom: 15px;
+}
+#lianmeng > .pull-left {
+  width: 68%;
+}
+#lianmeng > .pull-left .abtitle {
+  height: 26px;
+  border-bottom: 1px solid #ddd;
+}
+#lianmeng > .pull-left .abtitle > h4 {
+  margin: 0;
+}
+#lianmeng > .pull-left .abtitle a {
+  text-decoration: none;
+  color: #666;
+}
+#lianmeng > .pull-left .abcontent .content-top {
+  text-align: center;
+}
+#lianmeng > .pull-left .abcontent .content-top .time {
+  padding-bottom: 1em;
+}
+#lianmeng > .pull-left .abcontent .content-top .time span {
+  padding: 0 1em;
+}
+#lianmeng > .pull-left .abcontent .content-center > div {
+  margin: 1em 0;
+  text-indent: 2em;
+  line-height: 1.8em;
+}
+#lianmeng > .pull-right {
+  max-width: 27%;
+  padding: 1em 1.7em;
+  background-color: #f5f5f9;
+}
+#lianmeng > .pull-right .box > h4 {
+  padding-bottom: 5px;
+  padding-left: 5px;
+  border-left: 3px solid #e60012;
+  border-bottom: 1px solid #ddd;
+}
+#lianmeng > .pull-right .box ul li {
+  padding: 0.5em 0;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  list-style-position: inside;
+}
+#lianmeng > .pull-right .box ul li a {
+  text-decoration: none;
+  color: #666;
+}

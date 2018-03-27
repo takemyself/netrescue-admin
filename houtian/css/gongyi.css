@@ -1,0 +1,69 @@
+#gongyi .gytable .row .tablelf {
+  padding-left: 0;
+}
+#gongyi .gytable .row .tablelf label {
+  font-weight: normal;
+}
+#gongyi .gytable .row .tablelf > h4 {
+  border-bottom: 1px solid #dbdbdb;
+  padding-bottom: 5px;
+}
+#gongyi .gytable .row .tablerg > h4 {
+  border-bottom: 1px solid #dbdbdb;
+  padding-bottom: 5px;
+}
+#gongyi .gytable .row .tablerg ul li {
+  list-style: none;
+  border-bottom: 1px dashed #dbdbdb;
+  padding: 5px 0 5px 15px;
+  background: url(../img/iconc1.png) 0% 50% no-repeat;
+}
+#gongyi .gytable .row .tablerg ul li span {
+  padding-left: 8px;
+}
+#gongyi .gytable .row .tabbottom {
+  padding-left: 0;
+  margin-bottom: 1em;
+}
+#gongyi .gytable .row .tabbottom > h4 {
+  border-bottom: 1px solid #dbdbdb;
+  padding-bottom: 5px;
+}
+#gongyi .gytable .row .tabbottom div.money {
+  margin: 1em 0;
+}
+#gongyi .gytable .row .tabbottom div.money span {
+  border: 1px solid #bdbdbd;
+  display: inline-block;
+  width: 129px;
+  height: 40px;
+  text-align: center;
+  line-height: 40px;
+  border-radius: 3px;
+  margin-left: 5px;
+}
+#gongyi .gytable .row .tabbottom div.money span.active {
+  border: none;
+  background: url(../img/hover.png) 0% 50% no-repeat;
+}
+#gongyi .gytable .row .tabbottom div.zhifuway {
+  margin-bottom: 1em;
+}
+#gongyi .gytable .row .tabbottom div.zhifuway span {
+  display: inline-block;
+  width: 129px;
+  height: 40px;
+  line-height: 40px;
+  text-align: center;
+  margin-left: 5px;
+  border-radius: 3px;
+  border: 1px solid #bdbdbd;
+}
+#gongyi .gytable .row .tabbottom div.zhifuway span.active {
+  border: none;
+  background: url(../img/hover.png) 0% 50% no-repeat;
+}
+#gongyi .gytable .row .tabbottom button a {
+  text-decoration: none;
+  color: #fff;
+}

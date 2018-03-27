@@ -1,0 +1,80 @@
+{extend name='public/master'}
+{block name='content'}
+<link rel="stylesheet" href="__ROOT__/index/css/lianmenglist.css">
+<style>
+    #lmlist > .pull-left .abcontent .page ul li a {
+        margin-right: 0.3em;
+        border-radius: 3px;
+        color: #000;
+        padding: 6px 12px;
+    }
+</style>
+<div class="containerself" id="lmlist">
+    <div class="pull-left">
+        <div class="clearfix abtitle">
+            <h4 class="pull-left">救援联盟</h4>
+            <div class="pull-right">
+                您当前的位置：
+                <a href="{:url('index/index/index')}">首页></a>
+                <a href="">救援联盟</a>
+            </div>
+        </div>
+        <div class="abcontent">
+            <div class="content-center container-fluid">
+                <div class="row">
+                    {volist name="$list" id="vo"}
+                    <div class="col col-md-6 col-lf">
+                        <a href="{:url('index/union/content',['nid'=>$vo.nid])}">
+                            <img src="__ROOT__/uploads/{$vo.pic}" class="img-responsive" alt=""/>
+                            <div class="listbox">
+                                <h4>{$vo.title}</h4>
+                                <p>发布人：<span>{$vo.peo}</span> | 浏览量：<span>{$vo.reads}</span></p>
+                            </div>
+                        </a>
+                    </div>
+                    {/volist}
+                </div>
+            </div>
+            <div class="page clearfix">
+                Showing
+                <span>1</span>
+                to
+                <span>10</span>
+                of
+                <span>57</span>
+                entries
+                <ul class="pagination pull-right">
+                    {$page}
+                </ul>
+            </div>
+        </div>
+    </div>
+    <div class="pull-right">
+        <div class="box">
+            <h4>厚天救援联盟</h4>
+            <ul>
+                {volist name="$list" id="vo"}
+                <li><a href="{:url('index/union/content',['nid'=>$vo.nid])}">{$vo.title}</a></li>
+                {/volist}
+            </ul>
+        </div>
+        <div class="box fangzai">
+            <h4>防灾减灾</h4>
+            <ul>
+                {volist name="$fangData" id="vo"}
+                <li><a href="{:url('index/news/newscontent',['nid'=>$vo.nid])}">{$vo.title}</a></li>
+                {/volist}
+            </ul>
+        </div>
+        <div class="box zixun">
+            <h4>最新资讯</h4>
+            <ul>
+                {volist name="$xinData" id="vo"}
+                <li><a href="{:url('index/news/newscontent',['nid'=>$vo.nid])}">{$vo.title}</a></li>
+                {/volist}
+            </ul>
+        </div>
+    </div>
+    <div class="clearfix"></div>
+</div>
+{/block}

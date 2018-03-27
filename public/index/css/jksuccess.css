@@ -1,0 +1,48 @@
+#jksuccess {
+  margin: 1em 0 2em 0;
+  border: 1px solid #dbdbdb;
+}
+#jksuccess > h4 {
+  text-align: center;
+  font-weight: bold;
+}
+#jksuccess > p {
+  background-color: #f5f5f9;
+  text-align: center;
+  padding: 0.5em 0;
+}
+#jksuccess > p span:first-child {
+  padding-right: 20px;
+}
+#jksuccess > p span {
+  color: #e60012;
+}
+#jksuccess > p span:last-child {
+  padding: 0 1em;
+  color: #e60012;
+}
+#jksuccess > div {
+  padding: 1em 0;
+}
+#jksuccess > div > div {
+  text-align: center;
+}
+#jksuccess > div > div a {
+  padding: 0.5em 2em;
+  border-radius: 5px;
+  background-color: #aaa;
+  text-decoration: none;
+  color: #fff;
+  margin-right: 1em;
+}
+#jksuccess > div > div a.active {
+  background-color: #e60012;
+}
+#jksuccess > div > p {
+  margin-top: 2.5em ;
+  text-align: center;
+  font-size: 0.8em;
+}
+#jksuccess > div > p span {
+  color: #e60012;
+}

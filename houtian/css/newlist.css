@@ -1,0 +1,77 @@
+#newlist > .pull-left {
+  width: 68%;
+}
+#newlist > .pull-left .abtitle {
+  height: 26px;
+  border-bottom: 1px solid #ddd;
+}
+#newlist > .pull-left .abtitle > h4 {
+  margin: 0;
+}
+#newlist > .pull-left .abtitle a {
+  text-decoration: none;
+  color: #666;
+}
+#newlist > .pull-left .abcontent ul {
+  margin-top: 1em;
+}
+#newlist > .pull-left .abcontent ul li {
+  list-style: none;
+  border-bottom: 1px solid #ddd;
+  padding: 1em 0;
+}
+#newlist > .pull-left .abcontent ul li .listbox {
+  display: inline-block;
+}
+#newlist > .pull-left .abcontent ul li .pull-left {
+  border: 1px solid #ddd;
+  text-align: center;
+  padding: 1em 1.3em;
+  border-radius: 10%;
+}
+#newlist > .pull-left .abcontent ul li .pull-right {
+  width: 80%;
+}
+#newlist > .pull-left .abcontent ul li .pull-right > h4 {
+  margin-top: 0;
+}
+#newlist > .pull-left .abcontent ul li .pull-right div {
+  padding-bottom: 1em;
+}
+#newlist > .pull-left .abcontent .page {
+  padding: 1em 0;
+}
+#newlist > .pull-left .abcontent .page ul {
+  margin-top: 0;
+}
+#newlist > .pull-left .abcontent .page ul li a {
+  margin-right: 0.3em;
+  border-radius: 3px;
+  color: #000;
+}
+#newlist > .pull-left .abcontent .page ul li.active a {
+  background-color: #f5f5f9;
+  border: 1px solid #ddd;
+}
+#newlist > .pull-right {
+  max-width: 28%;
+  background-color: #f5f5f9;
+  padding: 1em 1.7em;
+}
+#newlist > .pull-right .box > h4 {
+  padding-bottom: 5px;
+  padding-left: 5px;
+  border-left: 3px solid #e60012;
+  border-bottom: 1px solid #ddd;
+}
+#newlist > .pull-right .box ul li {
+  padding: 0.5em 0;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  list-style-position: inside;
+}
+#newlist > .pull-right .box ul li a {
+  text-decoration: none;
+  color: #666;
+}

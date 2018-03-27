@@ -1,0 +1,50 @@
+#lunbo {
+  margin-bottom: 0;
+}
+#lianxi > h3 {
+  background-color: #f5f5f9;
+  text-align: center;
+  margin-top: 0;
+  padding: 1em 0;
+}
+#lianxi > .containerself {
+  margin: 2em 0;
+}
+#lianxi > .containerself .lxbox {
+  display: inline-block;
+}
+#lianxi > .containerself .lianxilf {
+  font-size: 1.2em;
+  font-weight: bold;
+}
+#lianxi > .containerself .lianxilf img {
+  width: 15px;
+  margin-right: 10px;
+}
+#lianxi > .containerself .lianxicenter {
+  width: 36%;
+  font-size: 1.2em;
+  padding-left: 1em;
+}
+#lianxi > .containerself .lianxicenter label {
+  font-weight: normal;
+}
+#lianxi > .containerself .lianxicenter .col-md-5 {
+  padding: 0;
+}
+#lianxi > .containerself .lianxirg {
+  background-color: #f5f5f9;
+  padding: 1em;
+  margin-right: 5em;
+}
+#lianxi > .containerself .lianxirg p {
+  text-align: center;
+}
+#baiduMap {
+  height: 250px;
+  overflow: hidden;
+  width: 74%;
+  left: 13%;
+  border: 1px solid #dbdbdb;
+  margin-bottom: 2em;
+}

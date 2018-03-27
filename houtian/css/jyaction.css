@@ -1,0 +1,49 @@
+#jyaction > .pull-left {
+  width: 68%;
+}
+#jyaction > .pull-left .abtitle {
+  height: 26px;
+  border-bottom: 1px solid #ddd;
+}
+#jyaction > .pull-left .abtitle > h4 {
+  margin: 0;
+}
+#jyaction > .pull-left .abtitle a {
+  text-decoration: none;
+  color: #666;
+}
+#jyaction > .pull-left .abcontent .content-top {
+  text-align: center;
+}
+#jyaction > .pull-left .abcontent .content-top .time {
+  padding-bottom: 1em;
+}
+#jyaction > .pull-left .abcontent .content-top .time span {
+  padding: 0 1em;
+}
+#jyaction > .pull-left .abcontent .content-center > div {
+  margin: 1em 0;
+  text-indent: 2em;
+  line-height: 1.8em;
+}
+#jyaction > .pull-right {
+  max-width: 27%;
+  padding: 1em 1.7em;
+}
+#jyaction > .pull-right .box > h4 {
+  padding-bottom: 5px;
+  padding-left: 5px;
+  border-left: 3px solid #e60012;
+  border-bottom: 1px solid #ddd;
+}
+#jyaction > .pull-right .box ul li {
+  padding: 0.5em 0;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  list-style-position: inside;
+}
+#jyaction > .pull-right .box ul li a {
+  text-decoration: none;
+  color: #666;
+}

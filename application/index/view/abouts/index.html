@@ -1,0 +1,59 @@
+{extend name='public/master'}
+{block name='content'}
+<link rel="stylesheet" href="__ROOT__/index/css/about.css">
+<div class="containerself" id="about">
+    <div class="pull-left">
+        <div class="clearfix abtitle">
+            <h4 class="pull-left">厚天简介</h4>
+            <div class="pull-right">
+                您当前的位置：
+                <a href="#">首页></a>
+                <a href="#">厚天简介</a>
+            </div>
+        </div>
+        <div class="abcontent">
+            <div class="content-top">
+                <h3>关于厚天</h3>
+                <div class="time">
+                    <span>时间：2018-03-05</span>
+                    <span>阅读量：999</span>
+                </div>
+            </div>
+            <div class="content-center">
+                <img src="__ROOT__/index/img/aboutconetent.jpg" class="img-responsive" alt=""/>
+                <div>
+                    3月7日,2018年全省防灾减灾救灾工作培训班在武汉举办。培训班深入学习领会党的十九大和习近平总书记关于防灾减灾救灾重要讲话精神,贯彻落实全国防灾减灾.3月7日,2018年全省防灾减灾救灾工作培训班在武汉举办。培训班深入学习领会党的十九大和习近平总书记关于防灾减灾救灾重要讲话精神,贯彻落实全国防灾减灾救
+                    3月7日,2018年全省防灾减灾救灾工作培训班在武汉举办。培训班深入学习领会党的十九大和习近平总书记关于防灾减灾救灾重要讲话精神,贯彻落实全国防灾减灾救
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="pull-right">
+        <div class="box news">
+            <h4>新闻动态</h4>
+            <ul>
+                {volist name="$xinData" id="vo"}
+                <li><a href="{:url('index/news/newscontent',['nid'=>$vo.nid])}">{$vo.title}</a></li>
+                {/volist}
+            </ul>
+        </div>
+        <div class="box fangzai">
+            <h4>防灾减灾</h4>
+            <ul>
+                {volist name="$xinData" id="vo"}
+                <li><a href="{:url('index/news/newscontent',['nid'=>$vo.nid])}">{$vo.title}</a></li>
+                {/volist}
+            </ul>
+        </div>
+        <div class="box zixun">
+            <h4>救援行动</h4>
+            <ul>
+                {volist name="$xingData" id="vo"}
+                <li><a href="{:url('index/news/newscontent',['nid'=>$vo.nid])}">{$vo.title}</a></li>
+                {/volist}
+            </ul>
+        </div>
+    </div>
+    <div class="clearfix"></div>
+</div>
+{/block}
